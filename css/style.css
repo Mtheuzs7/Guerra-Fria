@@ -1,0 +1,375 @@
+* {
+    list-style: none;
+}
+
+/* Classes Principais */
+
+.container {
+    width: 1140px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center {
+    text-align: center;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 5px;
+}
+
+/* Body */
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    font-family: Poppins-Regular;
+}
+
+/* Navegação */
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    line-height: 3px;
+}
+
+nav h1{
+    font-weight: 550;
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(0, 181, 241);
+    transition: 0.3s all;
+}
+
+#ready-to-start{
+    padding: 10px;
+    border: 2px solid rgb(0, 181, 241);
+    border-radius: 15px;
+}
+
+#ready-to-start:hover {
+    background-color: rgb(0, 181, 241);
+    color: white;
+}
+
+/* Main */
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 5px;
+}
+
+main p{
+    width: 80%;
+    max-width: 100%;
+    margin: 20px 0;
+    line-height: 20px;
+    font-family: Poppins-Light;
+}
+
+main p span {
+    color: rgb(0, 181, 241);
+}
+
+main .container{
+    display: flex;
+    flex-direction: row;
+}
+
+main img {
+    width: 100%;
+    display: flex;
+}
+
+main span {
+    color: rgb(0, 181, 241);
+}
+
+main h3 {
+    color: rgb(0, 181, 241);
+    line-height: 3px;
+}
+
+main .button{
+    margin-top: 40px;
+    width: 50%;
+    margin-left: -40px;
+}
+
+main .button li{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 181, 241);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+main .button li:hover {
+    background-color: rgb(0, 181, 241);
+    color: white;
+    transition: 0.5s;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    font-family: Poppins-Light;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 2px;
+}
+
+.land {
+    margin-top: 70px;
+    font-size: 13px;
+}
+
+footer span {
+    color: rgb(0, 181, 241);
+}
+
+/* Página de Alunos */
+
+.alunos main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.alunos main .container {
+    margin: 20px auto;
+    max-width: 100%;
+    align-items: center;
+}
+
+.alunos main .container img {
+    border-radius: 100px;
+    width: 70%;
+    border: 3px solid rgb(0, 181, 241);
+}
+
+.alunos main .container img:hover {
+    border: 3px solid lightcoral;
+    transition: 0.1s all;
+}
+
+#grupo img:hover {
+    border: 3px solid rgb(0, 181, 241);
+    transition: 0.1s all;
+}
+
+.alunos main h2 {
+    font-size: 30px;
+    width: 100%;
+    color: rgb(0, 181, 241);
+}
+
+.alunos main ul {
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+.alunos main h2:hover, .alunos main li:hover{
+    color: lightcoral;
+    transition: 0.7s all;
+}
+
+#grupo h3:hover, #grupo li:hover {
+    color: rgb(0, 181, 241);
+    transition: 0.5s all;
+}
+
+#grupo {
+    margin-top: 0px;
+}
+
+#grupo img {
+    width: 90%;
+    border-radius: 150px;
+}
+
+#grupo h3 {
+    margin-top: 35px;
+    color: white;
+}
+
+#grupo h2 {
+    color: rgb(0, 181, 241);
+}
+
+.alunos footer, .história footer, .tecnologia footer, .finalização footer, .referências footer {
+    position: relative;
+    margin-bottom: -15px;
+}
+
+main .next {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+main .next ul {
+    padding-left: 20px;
+}
+
+main .next li {
+    padding: 10px 25px;
+    border: 2px solid lightcoral;
+    border-radius: 20px 0;
+    font-family: Poppins-Regular;
+}
+
+main .next li:hover {
+    color: white;
+    background-color: lightcoral;
+    transition: 0.5s;
+}
+
+/* Página História */
+
+#historia, #alunos, #início, #tecnologia {
+    color: rgb(0, 181, 241);
+    text-decoration-line: underline;
+}
+
+.história main {
+    display: flex;
+    flex-direction: column;
+}
+
+.história .container {
+    display: flex;
+    width: 100%;
+}
+
+.história .col-12{
+    width: 100%;
+    padding: 0;
+}
+
+.história main h2 {
+    margin-top: 23px;
+    margin-bottom: 30px;
+    color: rgb(0, 181, 241);
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.história main p {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.história main h3 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.história p span {
+    font-weight: 600;
+}
+
+.história img {
+    margin: 20px 0;
+    height: 270px;
+    width: 100%;
+    border: 0.1px solid rgb(0, 181, 241);
+}
+
+.história .col-12 div {
+    display: flex;
+    flex-direction: row;
+}
+
+.história .col-12 .col-12 img {
+    height: 300px;
+}
+
+.história .left {
+    text-align: left;
+    margin-top: 40px;
+}
+
+/*Referências*/
+
+.refer h3 {
+    margin-top: -20px;
+}
+
+.refer ul {
+    width: 10%;
+    padding: 0;
+}
+
+.refer li {
+    margin: 2px;
+}
+
+.refer {
+    display: flex;
+    flex-direction: column;
+}
+
+.refer .container, .refer .clearfix{
+    width: 100%;
+}
